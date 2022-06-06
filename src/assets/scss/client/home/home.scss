@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Source+Sans+Pro:300,400,600,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 $bg-color: #151728;
 $border-color: #272a3a;
 $title-font: "DM Sans", sans-serif;
@@ -45,7 +45,25 @@ html {
   background-color: $bg-color;
   overflow: auto;
   flex-shrink: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  .logo {
+    padding-bottom: 10px;
+    background-color: red;
+    margin-bottom: -10px;
+    border: none;
+  }
+  .title_logo {
+    align-self: flex-start;
+    vertical-align: super;
+    font-size: 2rem;
+    font-family: "Lobster", cursive;
+  }
   @media screen and (max-width: 930px) {
+    & {
+      width: 200px;
+    }
     &.active {
       z-index: 4;
       & > *:not(.logo) {
@@ -73,6 +91,7 @@ html {
         display: flex;
         align-items: center;
         margin-top: -10px;
+        display: none;
       }
     }
   }
@@ -223,18 +242,36 @@ html {
   height: 60px;
   background-color: $bg-color;
   z-index: 3;
+  display: flex;
+  justify-content: space-between;
   position: relative;
+  .left-side-button2 {
+    display: none;
+  }
+  @media screen and (max-width: 997px) {
+    .left-side-button2 {
+      display: block;
+      height: 100%;
+      border: 0;
+      width: 52px;
+      background-color: #1e2031;
+      border-right: 1px solid #272a3a;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px;
+    }
+  }
   input {
     height: 100%;
     width: 100%;
     display: block;
     background-color: transparent;
     border: none;
-    padding: 0 54px;
+    padding: 0 40px;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3e%3cpath d='M508.9 478.7L360 330a201.6 201.6 0 0045.2-127.3C405.3 90.9 314.4 0 202.7 0S0 91 0 202.7s91 202.6 202.7 202.6c48.2 0 92.4-17 127.3-45.2L478.7 509c4.2 4.1 11 4.1 15 0l15.2-15.1c4.1-4.2 4.1-11 0-15zm-306.2-116c-88.3 0-160-71.8-160-160s71.7-160 160-160 160 71.7 160 160-71.8 160-160 160z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%235C5D71'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: 16px;
-    background-position: 25px 50%;
+    background-position: 15px 50%;
     color: #fff;
     font-family: $body-font;
     font-weight: 600;
@@ -249,6 +286,20 @@ html {
   flex-grow: 1;
   overflow: auto;
   background-color: #24273b;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(100, 100, 100, 0.5);
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #818b99;
+    border-radius: 9px;
+    width: 0px;
+  }
 }
 
 .profile {
@@ -264,7 +315,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center;
     border-radius: 4px;
   }
@@ -327,17 +378,20 @@ html {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   border: 3px solid $bg-color;
+  background-color: #fff;
 }
 
 .profile-name {
   margin-left: 24px;
   margin-bottom: 24px;
-  font-size: 22px;
+  font-size: 19px;
   color: #fff;
   font-weight: 600;
   font-family: $title-font;
+  width: fit-content;
+  text-shadow: 1px 1px 1px gray;
 }
 
 .timeline {
@@ -862,7 +916,7 @@ html {
     justify-content: center;
     position: relative;
     cursor: pointer;
-    height: 23px;
+    height: 40px;
     background-color: rgba($border-color, 0.5);
     border: 0;
     padding: 0;

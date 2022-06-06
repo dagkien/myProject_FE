@@ -1,6 +1,6 @@
 // @flow
 import React, { useState } from "react";
-
+import { MenuOutlined } from "@ant-design/icons";
 const Home = () => {
   const [checkSideLeft, setSideLeft] = useState(true);
   const [checkSideRight, setSideRight] = useState(true);
@@ -52,7 +52,14 @@ const Home = () => {
                 <path d="M19 12H5M12 19l-7-7 7-7" />
               </svg>
             </div>
-            <div className="logo">CHUONGGA</div>
+            <div className="logo">
+              <img
+                style={{ maxWidth: "45px" }}
+                src="https://images-na.ssl-images-amazon.com/images/I/61C-G9AVgJL.png"
+                alt="logo"
+              />{" "}
+              <span className="title_logo">COOP</span>
+            </div>
             <div className="side-wrapper">
               <div className="side-title">MENU</div>
               <div className="side-menu">
@@ -540,6 +547,12 @@ const Home = () => {
           </div>
           <div className="main">
             <div className="search-bar">
+              <button
+                className="left-side-button2"
+                onClick={handleOpenSideLeft}
+              >
+                <MenuOutlined />
+              </button>
               <input type="text" placeholder="Search" />
               <button
                 className="right-side-button"
@@ -564,14 +577,14 @@ const Home = () => {
               <div className="profile">
                 <div className="profile-avatar">
                   <img
-                    src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg"
+                    src="https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-fpt-polytechnic-inkythuatso-09-13-08-21.jpg"
                     alt="img"
                     className="profile-img"
                   />
-                  <div className="profile-name">Quan Ha</div>
+                  <div className="profile-name">FPT POLYTECHNIC</div>
                 </div>
                 <img
-                  src="https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+                  src="https://wiki.tino.org/wp-content/uploads/2021/06/Thiet-ke-khong-ten-67.png"
                   alt="img"
                   className="profile-cover"
                 />
