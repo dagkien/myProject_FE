@@ -1,2 +1,11 @@
+html {
+  font-size: 82.5%;
+}
+
 @import "./client/index.scss";
 @import "./admin/index.scss";
+
+// custom icon andt
+.anticon {
+  cursor: pointer;
+}
