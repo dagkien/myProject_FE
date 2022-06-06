@@ -61,7 +61,7 @@ html {
       }
     }
     &:not(.active) {
-      width: 56px;
+      width: 0px;
       overflow: hidden;
       & > *:not(.logo):not(.left-side-button) {
         opacity: 0;
@@ -245,7 +245,7 @@ html {
 }
 
 .main-container {
-  padding: 20px;
+  padding: 5px;
   flex-grow: 1;
   overflow: auto;
   background-color: #24273b;
@@ -858,7 +858,7 @@ html {
     justify-content: center;
     position: relative;
     cursor: pointer;
-    height: 60px;
+    height: 23px;
     background-color: rgba($border-color, 0.5);
     border: 0;
     padding: 0;
@@ -867,7 +867,7 @@ html {
     border-bottom: 1px solid $border-color;
     svg {
       transition: 0.2s;
-      width: 24px;
+      width: 18px;
     }
     svg:last-child {
       position: absolute;
