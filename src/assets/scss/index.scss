@@ -1,2 +1,10 @@
 @import "./client/index";
 @import "./admin/index";
+html {
+  font-size: 82.5%;
+}
+
+// custom icon andt
+.anticon {
+  cursor: pointer;
+}

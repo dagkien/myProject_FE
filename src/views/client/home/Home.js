@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   const handleCloseSideAll = () => {
-    if (checkOverlay == "right") {
+    if (checkOverlay === "right") {
       setSideRight(!checkSideRight);
     } else {
       setSideLeft(!checkSideLeft);
@@ -56,7 +56,7 @@ const Home = () => {
             <div className="side-wrapper">
               <div className="side-title">MENU</div>
               <div className="side-menu">
-                <a href="#">
+                <a href="#abc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -71,7 +71,7 @@ const Home = () => {
                   </svg>
                   Home
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg
                     stroke="currentColor"
                     stroke-width="2"
@@ -85,7 +85,7 @@ const Home = () => {
                   </svg>
                   Latest News
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -100,7 +100,7 @@ const Home = () => {
                   </svg>
                   Explore
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -115,7 +115,7 @@ const Home = () => {
                   </svg>
                   Files
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -131,7 +131,7 @@ const Home = () => {
                   </svg>
                   Galery
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -151,7 +151,7 @@ const Home = () => {
             <div className="side-wrapper">
               <div className="side-title">YOUR FAVOURITE</div>
               <div className="side-menu">
-                <a href="#">
+                <a href="#abc">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 472.11 472.11"
@@ -187,7 +187,7 @@ const Home = () => {
                   </svg>
                   Foresto
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg
                     viewBox="0 0 56 58"
                     width="512"
@@ -225,7 +225,7 @@ const Home = () => {
                   </svg>
                   Birds
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                       d="M339.4 346.5a636.5 636.5 0 00-46.7-140.2 8.4 8.4 0 00-7.6-4.8h-21a8.4 8.4 0 00-8 11 662.9 662.9 0 0129 289.7 8.4 8.4 0 008.4 9.5h50.3c4.4 0 8.1-3.6 8.3-8 2.3-52.8-2-105.6-12.7-157.2z"
@@ -285,7 +285,7 @@ const Home = () => {
                   </svg>
                   Nature
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg
                     viewBox="0 0 511.4 511.4"
                     width="512"
@@ -360,7 +360,7 @@ const Home = () => {
                   </svg>
                   Animals
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                       d="M176.6 360l-51.1-24.2-26-12.3L155.1 187l35.5-8.8s-58 97.4-14 181.9z"
@@ -443,7 +443,7 @@ const Home = () => {
                   </svg>
                   Motobike
                 </a>
-                <a href="#">
+                <a href="#abc">
                   <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M424 101l-8 25v6l16 21c3 4 0 9-4 9h-27l-5 2-15 22c-3 4-9 3-10-2l-8-25-4-4-25-8c-5-1-6-7-2-10l22-15 2-5V90c0-4 5-7 9-4l21 16h6l25-8c4-2 9 3 7 7z"
@@ -514,11 +514,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <a
-              href="https://twitter.com/AysnrTrkk"
-              className="follow-me"
-              target="_blank"
-            >
+            <a href="https://twitter.com/AysnrTrkk" className="follow-me">
               <span className="follow-text">
                 <svg
                   viewBox="0 0 24 24"
@@ -534,7 +530,10 @@ const Home = () => {
                 Follow me on Twitter
               </span>
               <span className="developer">
-                <img src="https://pbs.twimg.com/profile_images/1253782473953157124/x56UURmt_400x400.jpg" />
+                <img
+                  src="https://pbs.twimg.com/profile_images/1253782473953157124/x56UURmt_400x400.jpg"
+                  alt="img"
+                />
                 Aysenur Turk — @AysnrTrkk
               </span>
             </a>
@@ -566,22 +565,32 @@ const Home = () => {
                 <div className="profile-avatar">
                   <img
                     src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg"
-                    alt=""
+                    alt="img"
                     className="profile-img"
                   />
                   <div className="profile-name">Quan Ha</div>
                 </div>
                 <img
                   src="https://images.unsplash.com/photo-1508247967583-7d982ea01526?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-                  alt=""
+                  alt="img"
                   className="profile-cover"
                 />
                 <div className="profile-menu">
-                  <a className="profile-menu-link active">Timeline</a>
-                  <a className="profile-menu-link">About</a>
-                  <a className="profile-menu-link">Friends</a>
-                  <a className="profile-menu-link">Photos</a>
-                  <a className="profile-menu-link">More</a>
+                  <a href="#abc" className="profile-menu-link active">
+                    Timeline
+                  </a>
+                  <a href="#abc" className="profile-menu-link">
+                    About
+                  </a>
+                  <a href="#abc" className="profile-menu-link">
+                    Friends
+                  </a>
+                  <a href="#abc" className="profile-menu-link">
+                    Photos
+                  </a>
+                  <a href="#abc" className="profile-menu-link">
+                    More
+                  </a>
                 </div>
               </div>
               <div className="timeline">
@@ -600,7 +609,7 @@ const Home = () => {
                         >
                           <path d="M453.727 114.266H345.151V70.515c0-20.832-16.948-37.779-37.78-37.779H196.517c-20.832 0-37.78 16.947-37.78 37.779v43.751H50.162C22.502 114.266 0 136.769 0 164.428v256.563c0 27.659 22.502 50.161 50.162 50.161h403.565c27.659 0 50.162-22.502 50.162-50.161V164.428c0-27.659-22.503-50.162-50.162-50.162zm-262.99-43.751a5.786 5.786 0 015.78-5.779h110.854a5.786 5.786 0 015.78 5.779v43.751H190.737zM32 164.428c0-10.015 8.147-18.162 18.162-18.162h403.565c10.014 0 18.162 8.147 18.162 18.162v23.681c0 22.212-14.894 42.061-36.22 48.27l-167.345 48.723a58.482 58.482 0 01-32.76 0L68.22 236.378C46.894 230.169 32 210.321 32 188.109zm421.727 274.725H50.162c-10.014 0-18.162-8.147-18.162-18.161V253.258c8.063 6.232 17.254 10.927 27.274 13.845 184.859 53.822 175.358 52.341 192.67 52.341 17.541 0 7.595 1.544 192.67-52.341 10.021-2.918 19.212-7.613 27.274-13.845v167.733c.001 10.014-8.147 18.162-18.161 18.162z" />
                         </svg>
-                        Product Designer at <a href="#">Bravebist</a>
+                        Product Designer at <a href="#abc">Bravebist</a>
                       </div>
                       <div className="info-item">
                         <svg
@@ -615,7 +624,7 @@ const Home = () => {
                           <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
                           <path d="M9 22V12h6v10" />
                         </svg>
-                        Live in <a href="#">Hanoi, Vietnam</a>
+                        Live in <a href="#abc">Hanoi, Vietnam</a>
                       </div>
                       <div className="info-item">
                         <svg
@@ -625,7 +634,7 @@ const Home = () => {
                         >
                           <path d="M437 75C388.7 26.6 324.4 0 256 0S123.3 26.6 75 75C26.6 123.3 0 187.6 0 256s26.6 132.7 75 181c48.3 48.4 112.6 75 181 75s132.7-26.6 181-75c48.4-48.3 75-112.6 75-181s-26.6-132.7-75-181zM252.4 481.9c-52-.9-103.7-19.5-145.2-55.8L256 277.2l21.7 21.8a165.9 165.9 0 00-35.7 87c-3.5 30.5 0 63.3 10.4 95.9zM299 320.3l105.7 105.8a224.8 224.8 0 01-121.3 54.1C262 419.5 268 360.3 299 320.3zm21.2-21.2c40-31 99.2-37 160-15.6A224.8 224.8 0 01426 404.8zM482 252.4a231.7 231.7 0 00-96-10.4 165.9 165.9 0 00-87 35.7L277.3 256l148.9-148.8c36.3 41.5 55 93.2 55.8 145.2zm-290.2-39.5c-40 31-99.2 37-160 15.6A224.8 224.8 0 0186 107.2zm-84.5-127a224.8 224.8 0 01121.3-54.1C250 92.5 244 151.7 213 191.7zM270 126c3.5-30.5 0-63.3-10.4-95.9 52 .9 103.7 19.5 145.2 55.8L256 234.8 234.3 213a165.9 165.9 0 0035.7-87zM30 259.6a242 242 0 0072.7 11.7c7.8 0 15.6-.5 23.2-1.3a165.9 165.9 0 0087-35.7l21.8 21.7L85.9 404.8a225.3 225.3 0 01-55.8-145.2z" />
                         </svg>
-                        Player name <a href="#">Quan Ha</a>
+                        Player name <a href="#abc">Quan Ha</a>
                       </div>
                     </div>
                   </div>
@@ -634,6 +643,7 @@ const Home = () => {
                       <img
                         src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
                         className="event-img"
+                        alt="img"
                       />
                       <div className="event-date">
                         <div className="event-month">Jan</div>
@@ -653,7 +663,7 @@ const Home = () => {
                     <div className="user">
                       <img
                         src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0f"
-                        alt=""
+                        alt="img"
                         className="user-img"
                       />
                       <div className="username">Chandelio</div>
@@ -661,7 +671,7 @@ const Home = () => {
                     <div className="user">
                       <img
                         src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f"
-                        alt=""
+                        alt="img"
                         className="user-img"
                       />
                       <div className="username">Janet Jolie</div>
@@ -669,7 +679,7 @@ const Home = () => {
                     <div className="user">
                       <img
                         src="https://images.unsplash.com/photo-1546539782-6fc531453083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-                        alt=""
+                        alt="img"
                         className="user-img"
                       />
                       <div className="username">Patrick Watsons</div>
@@ -679,13 +689,13 @@ const Home = () => {
                 <div className="timeline-right">
                   <div className="status box">
                     <div className="status-menu">
-                      <a className="status-menu-item active" href="#">
+                      <a className="status-menu-item active" href="#abc">
                         Status
                       </a>
-                      <a className="status-menu-item" href="#">
+                      <a className="status-menu-item" href="#abc">
                         Photos
                       </a>
-                      <a className="status-menu-item" href="#">
+                      <a className="status-menu-item" href="#abc">
                         Videos
                       </a>
                     </div>
@@ -693,6 +703,7 @@ const Home = () => {
                       <img
                         src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg"
                         className="status-img"
+                        alt="img"
                       />
                       <textarea
                         className="status-textarea"
@@ -700,7 +711,7 @@ const Home = () => {
                       ></textarea>
                     </div>
                     <div className="status-actions">
-                      <a href="#" className="status-action">
+                      <a href="#abc" className="status-action">
                         <svg
                           viewBox="-42 0 512 512"
                           xmlns="http://www.w3.org/2000/svg"
@@ -724,7 +735,7 @@ const Home = () => {
                         </svg>
                         People
                       </a>
-                      <a href="#" className="status-action">
+                      <a href="#abc" className="status-action">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
@@ -736,7 +747,7 @@ const Home = () => {
                         </svg>
                         Check in
                       </a>
-                      <a href="#" className="status-action">
+                      <a href="#abc" className="status-action">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
@@ -760,6 +771,7 @@ const Home = () => {
                       <img
                         src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg"
                         className="status-img"
+                        alt="img"
                       />
                       <div className="album-detail">
                         <div className="album-title">
@@ -774,18 +786,18 @@ const Home = () => {
                       <div className="album-photos">
                         <img
                           src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80"
-                          alt=""
+                          alt="img"
                           className="album-photo"
                         />
                         <div className="album-right">
                           <img
                             src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-                            alt=""
+                            alt="img"
                             className="album-photo"
                           />
                           <img
                             src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-                            alt=""
+                            alt="img"
                             className="album-photo"
                           />
                         </div>
@@ -793,7 +805,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="album-actions">
-                    <a href="#" className="album-action">
+                    <a href="#abc" className="album-action">
                       <svg
                         stroke="currentColor"
                         stroke-width="2"
@@ -806,7 +818,7 @@ const Home = () => {
                       </svg>
                       87
                     </a>
-                    <a href="#" className="album-action">
+                    <a href="#abc" className="album-action">
                       <svg
                         stroke="currentColor"
                         stroke-width="2"
@@ -820,7 +832,7 @@ const Home = () => {
                       </svg>
                       20
                     </a>
-                    <a href="#" className="album-action">
+                    <a href="#abc" className="album-action">
                       <svg
                         stroke="currentColor"
                         stroke-width="2"
@@ -875,7 +887,7 @@ const Home = () => {
               Quan Ha
               <img
                 src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg"
-                alt=""
+                alt="img"
                 className="account-profile"
               />
               <span>▼</span>
@@ -886,7 +898,7 @@ const Home = () => {
             <div className="user">
               <img
                 src="https://pbs.twimg.com/profile_images/1102351320567164931/ZCkJgJIH.png"
-                alt=""
+                alt="img"
                 className="user-img"
               />
               <div className="username">
@@ -897,7 +909,7 @@ const Home = () => {
             <div className="user">
               <img
                 src="https://pbs.twimg.com/profile_images/1153966095444992000/1lpIyHaQ.jpg"
-                alt=""
+                alt="img"
                 className="user-img"
               />
               <div className="username">
@@ -908,7 +920,7 @@ const Home = () => {
             <div className="user">
               <img
                 src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&auto=format&fit=crop&w=3500&q=80"
-                alt=""
+                alt="img"
                 className="user-img"
               />
               <div className="username">
@@ -919,7 +931,7 @@ const Home = () => {
             <div className="user">
               <img
                 src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
-                alt=""
+                alt="img"
                 className="user-img"
               />
               <div className="username">
@@ -934,6 +946,7 @@ const Home = () => {
               <img
                 src="https://randomuser.me/api/portraits/men/1.jpg"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Andrei Mashrin
@@ -944,6 +957,7 @@ const Home = () => {
               <img
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=046c29138c1335ef8edee7daf521ba50"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Aryn Jacobssen
@@ -954,6 +968,7 @@ const Home = () => {
               <img
                 src="https://images.unsplash.com/photo-1575084713138-342cae5f8d00?ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Carole Landu
@@ -964,6 +979,7 @@ const Home = () => {
               <img
                 src="https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?h=350&auto=compress&cs=tinysrgb"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Chineze Afa
@@ -974,6 +990,7 @@ const Home = () => {
               <img
                 src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Mok Kwang
@@ -984,6 +1001,7 @@ const Home = () => {
               <img
                 src="https://randomuser.me/api/portraits/women/63.jpg"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Naomi Yepes
@@ -994,6 +1012,7 @@ const Home = () => {
               <img
                 src="https://images.unsplash.com/photo-1476493279419-b785d41e38d8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=61eaea85f1aa3d065400179c78163f15"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Shaamikh Ale
@@ -1004,6 +1023,7 @@ const Home = () => {
               <img
                 src="https://m.media-amazon.com/images/M/MV5BMjI4NDcyNjQxNl5BMl5BanBnXkFtZTgwMzI4OTM3NjM@._V1_UY256_CR13,0,172,256_AL_.jpg"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Sofia Alcocer
@@ -1014,6 +1034,7 @@ const Home = () => {
               <img
                 src="https://images.unsplash.com/photo-1509380836717-c4320ccf1a6f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=e01c8c45a063daaf6d6e571a32bd6c90"
                 className="user-img"
+                alt="img"
               />
               <div className="username">
                 Wen Yahui
@@ -1023,7 +1044,7 @@ const Home = () => {
             <div className="user">
               <img
                 src="https://pbs.twimg.com/profile_images/737221709267374081/sdwta9Oh.jpg"
-                alt=""
+                alt="img"
                 className="user-img"
               />
               <div className="username">
@@ -1069,7 +1090,7 @@ const Home = () => {
         </div>
         <div
           className={
-            checkOverlay == "right"
+            checkOverlay === "right"
               ? checkSideRight
                 ? "overlay"
                 : "overlay active rightSide"

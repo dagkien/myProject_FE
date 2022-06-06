@@ -317,6 +317,10 @@ html {
   z-index: 1;
   bottom: 16px;
   left: 24px;
+
+  // @media screen and (max-width: 768px) {
+  //   bottom: -100px;
+  // }
 }
 
 .profile-img {
@@ -662,7 +666,7 @@ html {
 
 .album-actions {
   padding: 0 20px 20px;
-  background-color: #151728;
+  background-color: $bg-color;
 }
 
 .album-action {
