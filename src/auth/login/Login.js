@@ -1,5 +1,6 @@
 // @flow
 import {
+  FacebookFilled,
   GoogleOutlined,
   LockOutlined,
   TwitterOutlined,
@@ -41,10 +42,10 @@ const Login = () => {
           </div>
 
           <div className="text-right p-t-8 p-b-31">
-            <Link to={"/login"}>Forgot password?</Link>
+            <Link to={"/Đăng Nhập"}>Forgot password?</Link>
           </div>
 
-          <div className="container-login-form-btn">
+          <div className="container-Đăng Nhập-form-btn">
             <div className="wrap-login-form-btn">
               <div className="login-form-bgbtn"></div>
               <button className="login-form-btn">Login</button>
@@ -55,7 +56,7 @@ const Login = () => {
 
           <div className="flex-c-m">
             <Link to={"/login"} className="login-social-item bg1">
-              <i className="fab fas-facebook"></i>
+              <FacebookFilled />
             </Link>
 
             <Link to={"/login"} className="login-social-item bg2">
@@ -67,7 +68,7 @@ const Login = () => {
             </Link>
           </div>
 
-          <div className="flex-col-c p-t-155">
+          <div className="flex-col-c">
             <span className="txt1 p-b-17">Or Sign Up Using</span>
 
             <Link to={"/login"} className="txt2">

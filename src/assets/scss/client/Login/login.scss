@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans:wght@900&family=Poppins:ital,wght@0,400;1,200;1,400&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap");
 .container-login {
   background-color: $bg-color;
   color: white;
@@ -9,8 +11,9 @@
   align-items: center;
   padding: 15px;
   a {
-    font-family: Poppins-Regular;
-    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    text-decoration: none;
     line-height: 1.7;
     color: #666666;
     margin: 0px;
@@ -19,7 +22,9 @@
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
   }
-
+  span {
+    font-size: 1.4rem;
+  }
   a:focus {
     outline: none !important;
   }
@@ -38,9 +43,8 @@
   h6 {
     margin: 0px;
   }
-
   p {
-    font-family: Poppins-Regular;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 1.7;
     color: #666666;
@@ -81,7 +85,7 @@
   /*//////////////////////////////////////////////////////////////////
   [ Utility ]*/
   .txt1 {
-    font-family: Poppins-Regular;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #666666;
@@ -91,7 +95,7 @@
   }
 
   .txt2 {
-    font-family: Poppins-Regular;
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
@@ -106,6 +110,10 @@
   }
   .bg3 {
     background-color: #ea4335;
+  }
+  .text-right {
+    padding: 0.6em;
+    text-align: end;
   }
 
   /*//////////////////////////////////////////////////////////////////
@@ -128,10 +136,12 @@
 
   .login-form-title {
     display: block;
-    font-family: Poppins-Bold;
-    font-size: 39px;
+    // font-family: "Abril Fatface", cursive;
+    font-family: "Concert One", cursive;
+    font-size: 2.8rem;
     line-height: 1.2;
     text-align: center;
+    padding-bottom: 1.6rem;
   }
 
   /*------------------------------------------------------------------
@@ -145,8 +155,8 @@
   }
 
   .label-input {
-    font-family: Poppins-Regular;
-    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
     line-height: 1.5;
     padding-left: 7px;
   }
@@ -161,7 +171,7 @@
   }
   .input {
     font-family: Poppins-Medium;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #333333;
     line-height: 1.2;
 
@@ -177,6 +187,9 @@
   .flex-c-m {
     display: flex;
     justify-content: center;
+  }
+  .flex-col-c {
+    text-align: center;
   }
   /*------------------------------------------------------------------
   [ Button ]*/
@@ -290,7 +303,7 @@
     right: 2px;
     pointer-events: none;
 
-    font-family: Poppins-Regular;
+    font-family: "Poppins", sans-serif;
     color: #c80000;
     font-size: 13px;
     line-height: 1.4;
